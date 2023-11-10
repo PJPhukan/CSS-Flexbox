@@ -1,5 +1,84 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+h1 {
+    color: blue;
+    margin: 2rem 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    border: 2px solid red;
+    height: 50vh;
+    background-color: rgb(50, 104, 205);
+    display: flex;
+    /* JUSTIFY CONTENT PROPTERTY */
+    /* justify-content: center; */
+    /* justify-content:end; */
+    /* justify-content:space-around; */
+    /* justify-content:space-between; */
+    justify-content: space-evenly;
+
+    /* ALIGN ITEM PROPTERTY */
+    align-items: center;
+    /* align-items: flex-end; */
+    /* align-items:flex-start; */
+
+    /* FLEX-DIRECTION PROPERTY  */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+
+    /* FLEX WRAP PROPERTY  */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-wrap: wrap; */
+
+    /* ALIGN-CONTENT PROPERTY  */
+    align-content: center;
+    /* align-content: flex-end; */
+    /* align-content: flex-start; */
+    /* align-content:space-around; */
+
+    /* FLEX-FLOW PROPERTY  */
+    /* flex-flow: row wrap-reverse; */
+
+
+    /* FLEX GAP PROPERTY */
+    /* gap: 2rem; */
+    /* row-gap: 40px; */
+    /* column-gap: 80px; */
+    /* gap: 40px 80px; */
+}
+
+.item {
+    height: 70px;
+    width: 70px;
+    border: 2px solid rgb(0, 0, 0);
+    background: rgb(0, 238, 255);
+    margin: 4px;
+    /* flex-grow: 1; */
+}
+
+.item:nth-child(3){
+    /* flex-grow: 4; */
+    flex-shrink: 2;
+    align-self: flex-end;
+
+}
+/* default order 0 */
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
 }
